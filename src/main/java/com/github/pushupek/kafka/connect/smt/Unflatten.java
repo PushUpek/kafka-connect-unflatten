@@ -107,4 +107,7 @@ public class Unflatten<R extends ConnectRecord<R>>
     public void close() {
         // Nothing to do here
     }
+
+    public static class Value<R extends ConnectRecord<R>>
+        extends Unflatten<R> {}
 }
